@@ -1,0 +1,42 @@
+.urlLink {
+  font-size: large;
+  font-weight: bold;
+  text-decoration: none;
+  color: whitesmoke;
+  transition: 0.3s;
+  margin-left: 20px;
+}
+.urlLink:hover {
+  color: #e50914;
+  transition: 0.3s;
+}
+.urlLink:active {
+  color: whitesmoke;
+}
+
+.urlLinkSmallTab {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+.urlLinkSmallTab:hover {
+  color: #e50914;
+  transition: 0.3s;
+}
+
+.appName {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: xx-large;
+  color: #e50914;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.appName:hover {
+  color: #990d14;
+  transition: 0.2s;
+}
+
+.activeLink {
+  color: #e50914;
+}
