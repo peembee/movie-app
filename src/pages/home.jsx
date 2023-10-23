@@ -46,7 +46,7 @@ export default function Home() {
   //---------------------------------------------------
 
   return (
-    <div>
+    <>
       <Navbar currentPage="Home" />
       <Container maxWidth="m">
         <h2 className="mainTextColor">home-Page</h2>
@@ -69,6 +69,6 @@ export default function Home() {
           <h2 className="mainTextColor">top lista series</h2>
         </div>
       </Container>
-    </div>
+    </>
   );
 }

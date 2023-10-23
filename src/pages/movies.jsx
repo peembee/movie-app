@@ -16,7 +16,7 @@ export default function Movies() {
   });
   //---------------------------------------------------
   return (
-    <div>
+    <>
       <Navbar currentPage="Movies" />
       <Container maxWidth="m">
         <h2 className="mainTextColor">moviepage</h2>
@@ -34,6 +34,6 @@ export default function Movies() {
           <h2 className="mainTextColor">filmer</h2>
         </div>
       </Container>
-    </div>
+    </>
   );
 }

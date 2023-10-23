@@ -17,11 +17,11 @@ export default function About() {
   //---------------------------------------------------
 
   return (
-    <div>
+    <>
       <Navbar currentPage="About" />
       <Container maxWidth="m">
         <h2 className="mainTextColor">about-Page</h2>
       </Container>
-    </div>
+    </>
   );
 }

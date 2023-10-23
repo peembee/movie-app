@@ -16,7 +16,7 @@ export default function Shows() {
   });
   //---------------------------------------------------
   return (
-    <div>
+    <>
       <Navbar currentPage="Shows" />
       <Container maxWidth="m">
         <h2 className="mainTextColor">ShowsPage</h2>
@@ -35,6 +35,6 @@ export default function Shows() {
           <h2 className="mainTextColor">serier</h2>
         </div>
       </Container>
-    </div>
+    </>
   );
 }
