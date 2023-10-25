@@ -4,6 +4,10 @@ import "../style/sharedByAll.css";
 import { useContext } from "react";
 import { useEffect } from "react";
 import { AppContext } from "../shared/GlobalAppNameContext";
+import { OnTheAirTodayShowsApi } from "../APITvShows/onTheAirTodayShowsApi";
+import { TopRatedShowsApi } from "../APITvShows/topRatedShowsApi";
+import { ApiAllShows } from "../APITvShows/apiAllShows";
+import { PopularShowsApi } from "../APITvShows/popularShowsApi";
 
 export default function Shows() {
   // takes the official Application-name then  set the document-title to a suitable name for the current page using Context()
@@ -19,20 +23,34 @@ export default function Shows() {
     <>
       <Navbar currentPage="Shows" />
       <Container maxWidth="m">
-        <h2 className="mainTextColor">ShowsPage</h2>
+        <br />
+
         <div>
+          <h2 className="mainTextColor">On The Air Today</h2>
+          <OnTheAirTodayShowsApi />
           <br />
-
-          <h2 className="mainTextColor">senast tillagda serier</h2>
+          <br />
         </div>
 
-        <br />
         <div>
-          <h2 className="mainTextColor">top lista series</h2>
+          <h2 className="mainTextColor">Top Rated</h2>
+          <TopRatedShowsApi />
+          <br />
+          <br />
         </div>
-        <br />
+
         <div>
-          <h2 className="mainTextColor">serier</h2>
+          <h2 className="mainTextColor">Most Popular</h2>
+          <PopularShowsApi />
+          <br />
+          <br />
+        </div>
+
+        <div>
+          <h2 className="mainTextColor">Tv Shows</h2>
+          <ApiAllShows />
+          <br />
+          <br />
         </div>
       </Container>
     </>

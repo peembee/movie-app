@@ -1,3 +1,126 @@
 .mainTextColor {
   color: whitesmoke;
 }
+
+/* Handling imagesize, imagegrid etc */
+.imageHandler {
+  overflow-x: scroll;
+  white-space: nowrap;
+  overflow-y: hidden;
+  margin-left: 50px;
+  margin-right: 50px;
+  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 0.85) 15%,
+      rgba(0, 212, 255, 0.7707457983193278) 50%,
+      rgba(2, 0, 36, 0.8463760504201681) 85%
+    );
+    border-radius: 10px;
+  }
+}
+
+.imageGrid {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.imageSize {
+  width: 220px;
+  height: 300px;
+  transition: transform 0.3s;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 85px;
+  border-radius: 5px;
+}
+.imageSize:hover {
+  transform: scale(1.1);
+}
+.images {
+  width: 250px;
+  height: 400px;
+  margin-right: 10px;
+  display: inline-block;
+  white-space: nowrap;
+  margin-top: -70px;
+  margin-bottom: 10px;
+}
+/* ----------------------------------------- */
+
+.topTitles {
+  color: whitesmoke;
+  display: flex;
+  margin-left: 45px;
+}
+
+.loadingIcon {
+  margin-top: 5%;
+  margin-left: 50%;
+}
+
+.aboutPageTitle {
+  font-size: xx-large;
+  font-weight: bold;
+  color: whitesmoke;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutPage {
+  color: whitesmoke;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px; /* Ange din önskade maxbredd här */
+  margin: 0 auto; /* Horisontell centrerad text */
+  padding: 20px; /* Lägg till lite utrymme runt texten */
+}
+
+@media (max-width: 768px) {
+  .imageSize {
+    width: 150px;
+    height: 200px;
+  }
+  .images {
+    width: 250px;
+    height: 400px;
+    margin-right: 10px;
+    display: inline-block;
+    white-space: nowrap;
+    margin-top: -70px;
+    margin-bottom: -90px;
+  }
+  .imageHandler {
+    overflow-x: scroll;
+    white-space: nowrap;
+    overflow-y: hidden;
+    margin-left: 50px;
+    margin-right: 50px;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 0.85) 15%,
+        rgba(0, 212, 255, 0.7707457983193278) 50%,
+        rgba(2, 0, 36, 0.8463760504201681) 85%
+      );
+      border-radius: 10px;
+    }
+  }
+}
