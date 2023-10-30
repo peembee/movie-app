@@ -1,3 +1,62 @@
 .div {
   background: orangered;
 }
+
+.centerButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.luckySpinTitel {
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-shadow: 0px 10px 4px black;
+}
+
+.spinText {
+  color: rgba(245, 245, 245, 0.878);
+  font-size: large;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  display: contents;
+}
+.luckySpinButton {
+  background: linear-gradient(to bottom, #c50f02, #600877fc);
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  transition: background-image 0.5s, transform 0.5s;
+  cursor: pointer;
+  transform-style: preserve-3d; /* Bevara 3D-transformationsutrymme */
+  border: 5px solid rgba(0, 0, 0, 0.536);
+  box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.667);
+}
+
+.luckySpinButton:hover {
+  transform-style: preserve-3d;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(-4000deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+/* Lägg till en klass som aktiverar animationen baserat på isSpinning */
+.luckySpinButton.spinAnimation {
+  transform: scale(1.1);
+  animation: spin 3s ease-in-out infinite;
+  transform-style: preserve-3d;
+}

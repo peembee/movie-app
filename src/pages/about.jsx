@@ -9,7 +9,7 @@ export default function About() {
   // takes the official Application-name then  set the document-title to a suitable name for the current page using Context()
   const appName = useContext(AppContext);
 
-  const documentTitle = appName + " - About";
+  const documentTitle = appName.appName + " - About";
 
   useEffect(() => {
     document.title = documentTitle;

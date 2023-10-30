@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
 
+// eslint-disable-next-line react/prop-types
 export default function ImageHandler({ movieData, isMovie }) {
   return (
     <>
       <div className="imageHandler">
         <div className="imageGrid">
           <div className="images">
+            {/* // eslint-disable-next-line react/prop-types */},
+            {/* eslint-disable-next-line react/prop-types */}
             {movieData.map((movie) => (
               <Link
                 to={

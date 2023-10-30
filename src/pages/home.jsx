@@ -7,12 +7,13 @@ import { AppContext } from "../shared/GlobalAppNameContext";
 import { HomeTrendingApi } from "../APIHome/homeTrendingApi";
 import { HomeTopRatedMoviesAPi } from "../APIHome/homeTopRatedMoviesAPi";
 import { HomeTopRatedShowsApi } from "../APIHome/homeTopRatedShowsApi";
+import { HomeLuckySpinApi } from "../APIHome/homeLuckySpinApi";
 
 export default function Home() {
   // takes the official Application-name then  set the document-title to a suitable name for the current page using Context()
   const appName = useContext(AppContext);
 
-  const documentTitle = appName + " - Home";
+  const documentTitle = appName.appName + " - Home";
 
   useEffect(() => {
     document.title = documentTitle;
@@ -25,30 +26,28 @@ export default function Home() {
         <br />
 
         <div>
-          <h2 className="mainTextColor">
-            lucky spin (visa en random film/serie på api)
-          </h2>
-
+          <h2 className="luckySpinTitel">Try Your Luck</h2>
+          <HomeLuckySpinApi />
           <br />
           <br />
         </div>
 
         <div>
-          <h2 className="mainTextColor">Trending</h2>
+          <h2 className="topTitles">Trending</h2>
           <HomeTrendingApi />
           <br />
           <br />
         </div>
 
         <div>
-          <h2 className="mainTextColor">top rated filmer</h2>
+          <h2 className="topTitles">Top Rated Movies</h2>
           <HomeTopRatedMoviesAPi />
           <br />
           <br />
         </div>
 
         <div>
-          <h2 className="mainTextColor">top rated series</h2>
+          <h2 className="mainTextColor">Top Rated Tv-Shows</h2>
           <HomeTopRatedShowsApi />
           <br />
           <br />

@@ -18,6 +18,7 @@ import { AppContext } from "../shared/GlobalAppNameContext";
 
 const pages = ["Home", "Movies", "Shows", "About"];
 
+//  PROP: CurrentPage setting the current page-titel to color red when page is active
 // eslint-disable-next-line react/prop-types
 function Navbar({ currentPage }) {
   const [anchorElNav, setAnchorElNav] = useState(null);

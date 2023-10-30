@@ -12,8 +12,7 @@ import { PopularMoviesApi } from "../APIMovies/popularMoviesApi";
 export default function Movies() {
   // takes the official Application-name then  set the document-title to a suitable name for the current page using Context()
   const appName = useContext(AppContext);
-  const documentTitle = appName + " - Movies";
-  console.log("mitt appnamn heter:   ", appName);
+  const documentTitle = appName.appName + " - Movies";
   useEffect(() => {
     document.title = documentTitle;
   });
